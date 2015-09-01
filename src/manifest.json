@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Scalix Mail Checker",
+  "description": "Checks your Scalix mailbox for new messages ",
+  "icons": {
+    "96": "icon.png"
+  },
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "author": "Scalix Inc",
+  "homepage_url": "https://scalix.com/",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": false
+  },
+  "background": {
+    "scripts": [
+      "common.js",
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "alarms",
+    "https://*/",
+    "http://*/"
+  ]
+}

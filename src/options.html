@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>My Test Extension Options</title></head>
+<body>
+
+<table border="0px">
+    <tr>
+        <td>Server:</td>
+        <td><input type="text" id="server"></td>
+    </tr>
+    <tr>
+        <td>Use HTTPS:</td>
+        <td><input type="checkbox" id="usehttps" checked="checked"></td>
+    </tr>
+    <tr>
+        <td>Username:</td>
+        <td><input type="text" id="username"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" id="password"></td>
+    </tr>
+</table>
+<p>
+    Url: <span id="url"> </span>
+</p>
+
+<p>
+    Folders to check:
+
+<ul id="folderList" style="list-style: none;">
+</ul>
+</p>
+
+<div id="status"></div>
+<div id="error" style="color:red;"></div>
+<button id="update_folder_list">Update Folder List</button>
+<button id="save">Save</button>
+
+<script src="common.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
