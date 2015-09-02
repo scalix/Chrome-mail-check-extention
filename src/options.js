@@ -16,7 +16,6 @@ function getUserPassword() {
     return document.getElementById('password').value || '';
 }
 
-
 function showError(msg) {
     document.getElementById('error').textContent = msg;
 }
@@ -107,7 +106,7 @@ function restore_options() {
 }
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
-document.getElementById('update_folder_list').addEventListener('click', function() {
+document.getElementById('update_folder_list').addEventListener('click', function () {
     getSettings(function (items) {
         initFolders(items.checkFolders);
     });

@@ -10,9 +10,9 @@ document.querySelector('#settings').addEventListener("click", function () {
 });
 
 document.querySelector('#open_webmail').addEventListener("click", function () {
-    getSettings(function (items) {
-        if (items.serverName) {
-            window.open(getServerUrl(items.serverName, items.useHTPPS) + '/webmail', '_blank');
+    getSettings(function (settings) {
+        if (settings.serverName) {
+            openScalixWebmail(settings);
         } else {
             document.querySelector('#settings').dispatchEvent(new Event('click'));
         }
@@ -22,4 +22,14 @@ document.querySelector('#open_webmail').addEventListener("click", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('total_new_messages').textContent = chrome.extension.getBackgroundPage().newMsgsTotalText;
+    chrome.alarms.get("scalixCheckMail", function (alarm) {
+        document.getElementById("update_interval").textContent = alarm.periodInMinutes;
+        if (alarm.scheduledTime) {
+            var date = new Date(alarm.scheduledTime);
+            document.getElementById("next_update_at").textContent = "Next request \
+                for updates will be sent  " + date.toLocaleTimeString();
+        }
+    })
 });
+
+
