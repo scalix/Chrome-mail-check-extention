@@ -17,4 +17,4 @@ ScreenShorts
 
 * popup page 
 
-  ![](/images/popup.png?raw=true)
+    ![](/images/popup.png?raw=true)
