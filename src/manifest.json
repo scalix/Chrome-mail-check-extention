@@ -5,6 +5,7 @@
   "icons": {
     "96": "icon.png"
   },
+  "short_name": "Scalix Mail Checker",
   "version": "1.0",
   "browser_action": {
     "default_icon": "icon.png",
@@ -24,6 +25,7 @@
     ],
     "persistent": true
   },
+  "minimum_chrome_version": "40",
   "permissions": [
     "activeTab",
     "storage",
