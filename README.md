@@ -7,6 +7,14 @@ folders.
 ScreenShorts
 =======
 
-* settings ![Settings Dialog](/images/settings.png?raw=true "Settings Dialog")
-* notifications ![notifications](/images/notification.png?raw=true "notifications")
-* popup page ![popup page](/images/popup.png?raw=true "popup page")
+* Settings Dialog
+
+    ![](/images/settings.png?raw=true)
+
+* notifications 
+
+    ![](/images/notification.png?raw=true)
+
+* popup page 
+
+  ![](/images/popup.png?raw=true)
