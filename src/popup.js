@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (alarm.scheduledTime) {
             var date = new Date(alarm.scheduledTime);
             document.getElementById("next_update_at").textContent = "Next request \
-                for updates will be sent  " + date.toLocaleTimeString();
+                for updates will be sent at " + date.toLocaleTimeString();
         }
     })
 });
