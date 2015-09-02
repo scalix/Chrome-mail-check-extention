@@ -8,5 +8,5 @@ ScreenShorts
 =======
 
 * settings ![Settings Dialog](/images/settings.png?raw=true "Settings Dialog")
-* notifications ![notifications](/images/settings.png?raw=true "notifications")
-* popup page ![popup page](/images/settings.png?raw=true "popup page")
+* notifications ![notifications](/images/notification.png?raw=true "notifications")
+* popup page ![popup page](/images/popup.png?raw=true "popup page")
